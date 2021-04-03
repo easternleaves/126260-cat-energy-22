@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -19,12 +20,12 @@
               </a>
             </li>
             <li class="site-list__item">
-              <a href="catalog.html">
+              <a class="site-list__item-link" href="catalog.html">
                 Каталог Продукции
               </a>
             </li>
             <li class="site-list__item">
-              <a href="form.html">
+              <a class="site-list__item-link" href="form.html">
                 Подбор Программы
               </a>
             </li>
@@ -36,7 +37,9 @@
       <section class="promo">
         <h1 class="promo__title">Функциональное питание для котов</h1>
         <p class="promo__slogan">Занялся собой? Займись котом!</p>
-        <img class="promo__image" src="img/index-can-mobile@2x.png" width="280" height="270" alt="Банка «Кэт-Энерджи Pro, Курица»">
+        <div class="promo__image">
+          <img src="img/index-can-mobile@2x.png" width="280" height="270" alt="Банка «Кэт-Энерджи Pro, Курица»">
+        </div>
         <a class="promo__button" href="form.html">Подобрать программу</a>
       </section>
       <section class="category">
@@ -45,7 +48,10 @@
         <p class="category__description">
           Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
         </p>
-        <a class="category__link" href="catalog.html">каталог slim</a>
+        <div>
+          <a class="category__link" href="catalog.html">каталог slim</a>
+        </div>
+
       </section>
       <section class="category">
         <img class="category__icon category__icon--pro" src="img/category-icon2.svg" width="67" height="50" alt="Иконка каталога pro">
@@ -83,40 +89,42 @@
         </div>
       </section>
       <section class="example">
-        <h2 class="example__title">Живой пример</h2>
-        <p class="example__description">
-          Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
-        </p>
-        <dl class="example__facts fact">
-          <div class="fact__item">
-            <dt class="fact__title">
-              5 КГ
-            </dt>
-            <dd class="fact__description">
-              снижение<br>
-              веса
-            </dd>
+        <div class="example__wrapper">
+          <h2 class="example__title">Живой пример</h2>
+          <p class="example__description">
+            Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+          </p>
+          <dl class="example__facts fact">
+            <div class="fact__item">
+              <dt class="fact__title">
+                5 КГ
+              </dt>
+              <dd class="fact__description">
+                снижение<br>
+                веса
+              </dd>
+            </div>
+            <div class="fact__item">
+              <dt class="fact__title">
+                60 ДНЕЙ
+              </dt>
+              <dd class="fact__description">
+                затрачено<br>
+                времени
+              </dd>
+            </div>
+          </dl>
+          <p class="example__summary">Затраты на питание: 15 000 РУБ.</p>
+          <img class="example__image example__image--before" src="img/before-mobile.png" width="311" height="232" alt="Толстый Борис до приема Кэт-Энерджи">
+          <div class="example__toggles">
+            <button class="example__toggle-button example__toggle-button--before" type="button">Было</button>
+            <div class="example__toggle-slider">Переключатель</div>
+            <button class="example__toggle-button" type="button">Стало</button>
           </div>
-          <div class="fact__item">
-            <dt class="fact__title">
-              60 ДНЕЙ
-            </dt>
-            <dd class="fact__description">
-              затрачено<br>
-              времени
-            </dd>
-          </div>
-        </dl>
-        <p class="example__summary">Затраты на питание: 15 000 РУБ.</p>
-        <img class="example__image example__image--before" src="img/before-mobile.png" width="311" height="232" alt="Толстый Борис до приема Кэт-Энерджи">
-        <div class="example-toggles">
-          <button class="example__toggle example__toggle--before" type="button">Было</button>
-          <div class="example__toggle-slider">Переключатель</div>
-          <button class="example__toggle" type="button">Стало</button>
         </div>
       </section>
       <section class="map">
-        <div class="map__description">
+        <div class="map__contacts">
           <h2 class="visually-hidden">Где мы находимся</h2>
           <p class="map__offer">
             Приглашаем к сотрудничеству дилеров!
@@ -131,8 +139,8 @@
       </section>
       <footer class="page-footer">
         <div class="page-footer__wrapper">
-          <a class="page-footer__logo" href="index.html">
-            <img src="img/logo-2.svg" width="128" height="24" alt="Лого «Кэт-Энерджи»">
+          <a class="page-footer__logo-link" href="index.html">
+            <img class="page-footer__logo" src="img/logo-2.svg" width="128" height="24" alt="Лого «Кэт-Энерджи»">
           </a>
           <div class="page-footer__social social">
             <b class="visually-hidden">Социальные кнопки</b>

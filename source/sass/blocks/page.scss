@@ -1,0 +1,14 @@
+.page {
+  @include second-font;
+  height: 100%;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: normal;
+  color: $special_dark-grey;
+}
+
+.page__body {
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+}

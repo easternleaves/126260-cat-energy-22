@@ -1,0 +1,12 @@
+.page-header {
+  @include main-font;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  color: $basic-black;
+  background-color: $basic-white;
+}
+
+.page-header__logo {
+  padding: 20px;
+}

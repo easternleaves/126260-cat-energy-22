@@ -1,0 +1,48 @@
+.promo {
+  margin-bottom: 22px;
+  background-color: $basic-green;
+  opacity: 0.85;
+}
+
+.promo__title {
+  @include main-font;
+  margin: 0;
+  padding-top: 27px;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 36px;
+  text-align: center;
+  color: $basic-white;
+}
+
+.promo__slogan {
+  @include main-font;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: $basic-white;
+}
+
+.promo__image {
+  margin-top: 29px;
+  text-align: center;
+}
+
+.promo__button {
+  @include main-font;
+  display: block;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-white;
+  background-color: $basic-green;
+  margin: 0 auto;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  outline: 1px solid $basic-black;
+}

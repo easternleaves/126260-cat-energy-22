@@ -1,0 +1,32 @@
+.category {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  background-color: $basic-grey;
+}
+
+.category__title {
+  @include main-font;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: $basic-black;
+}
+
+.category__description {
+  padding-bottom: 23px;
+  border-bottom: 1px solid $special_grey-4;
+}
+
+.category__link {
+  @include main-font;
+  padding-top: 19px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-black;
+}
