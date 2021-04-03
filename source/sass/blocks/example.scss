@@ -6,10 +6,10 @@
 }
 
 .example__title {
+  @include main-font;
   margin: 0;
   margin-bottom: 33px;
   font-size: 36px;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   line-height: 40px;
   color: $basic-black;
@@ -20,8 +20,8 @@
 }
 
 .example__summary {
+  @include main-font;
   font-size: 14px;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   line-height: 20px;
   text-transform: uppercase;
@@ -29,8 +29,8 @@
 }
 
 .example__toggle-button {
+  @include main-font;
   font-size: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   line-height: 20px;
   text-align: center;

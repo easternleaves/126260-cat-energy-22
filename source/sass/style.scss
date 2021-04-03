@@ -1,28 +1,19 @@
-// global styles
-@import "global/fonts.scss";
 @import "global/colors.scss";
+@import "global/fonts.scss";
+@import "global/mixins.scss";
 @import "global/utils.scss";
-
-// header
-@import "blocks/page-header.scss";
-@import "blocks/site-list.scss";
-
-// index
-@import "blocks/page.scss";
-@import "blocks/page-main.scss";
-@import "blocks/promo.scss";
+//
+@import "blocks/button.scss";
 @import "blocks/category.scss";
-@import "blocks/specification.scss";
+@import "blocks/copyright.scss";
 @import "blocks/example.scss";
 @import "blocks/fact.scss";
-
-// map
 @import "blocks/map.scss";
-
-// footer
+@import "blocks/page.scss";
 @import "blocks/page-footer.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/site-list.scss";
 @import "blocks/social.scss";
-@import "blocks/copyright.scss";
-
-// components
-@import "blocks/button.scss";
+@import "blocks/specification.scss";

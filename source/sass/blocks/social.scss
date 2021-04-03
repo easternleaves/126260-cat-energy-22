@@ -4,9 +4,7 @@
 }
 
 .social__list {
-  margin: 0;
-  padding: 0;
+  @include reset-list;
   padding-top: 20px;
   padding-bottom: 20px;
-  list-style: none;
 }

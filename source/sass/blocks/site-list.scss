@@ -1,7 +1,5 @@
 .site-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  @include reset-list;
   text-align: center;
   text-transform: uppercase;
 }

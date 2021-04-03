@@ -1,6 +1,6 @@
 .button {
+  @include main-font;
   font-size: 16px;
-  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   line-height: 20px;
   text-align: center;
