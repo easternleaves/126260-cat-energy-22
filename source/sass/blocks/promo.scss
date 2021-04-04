@@ -32,7 +32,8 @@
 
 .promo__button {
   @include main-font;
-  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-size: 14px;
   font-weight: normal;
   line-height: 18px;
@@ -41,8 +42,5 @@
   text-decoration: none;
   color: $basic-white;
   background-color: $basic-green;
-  margin: 0 auto;
-  padding-top: 11px;
-  padding-bottom: 11px;
-  outline: 1px solid $basic-black;
+  cursor: pointer;
 }
