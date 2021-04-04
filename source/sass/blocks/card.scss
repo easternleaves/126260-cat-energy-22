@@ -1,0 +1,14 @@
+.card__link {
+  text-decoration: none;
+}
+
+.card__title {
+  @include main-font;
+  margin: 0;
+  margin-bottom: 18px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $special_dark-grey-2;
+}

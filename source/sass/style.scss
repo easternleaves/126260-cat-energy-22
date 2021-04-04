@@ -3,10 +3,17 @@
 @import "global/mixins.scss";
 @import "global/utils.scss";
 //
+@import "blocks/additional.scss";
 @import "blocks/button.scss";
+@import "blocks/card.scss";
+@import "blocks/catalog.scss";
+@import "blocks/catalog-banner.scss";
 @import "blocks/category.scss";
 @import "blocks/copyright.scss";
+@import "blocks/data-list.scss";
 @import "blocks/example.scss";
+@import "blocks/extra-card.scss";
+@import "blocks/extra-list.scss";
 @import "blocks/fact.scss";
 @import "blocks/map.scss";
 @import "blocks/page.scss";
