@@ -3,6 +3,10 @@
   padding-top: 28px;
   padding-bottom: 28px;
   background-color: $basic-white;
+
+  &--inner {
+    background-color: $basic-grey;
+  }
 }
 
 .map__offer {
