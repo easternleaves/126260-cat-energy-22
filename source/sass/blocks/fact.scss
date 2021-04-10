@@ -5,10 +5,20 @@
   font-weight: normal;
   line-height: 24px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+  }
 }
 
 .fact__description {
   font-size: 12px;
   line-height: 12px;
   color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+  }
 }

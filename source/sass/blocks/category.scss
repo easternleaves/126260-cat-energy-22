@@ -13,11 +13,22 @@
   line-height: 37px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .category__description {
   padding-bottom: 23px;
   border-bottom: 1px solid $special_grey-4;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+    border-bottom: none;
+  }
 }
 
 .category__link {
@@ -29,4 +40,10 @@
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
+
