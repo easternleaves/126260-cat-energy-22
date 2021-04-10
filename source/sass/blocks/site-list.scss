@@ -4,6 +4,12 @@
   text-transform: uppercase;
 }
 
+@media (min-width: $tablet-width) {
+  .site-list {
+    width: 450px;
+  }
+}
+
 .site-list__item {
   padding: 22px;
   padding-bottom: 24px;

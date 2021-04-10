@@ -3,6 +3,11 @@
   padding-left: 20px;
   padding-right: 20px;
   background-color: $basic-grey-3;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .example__title {
@@ -13,10 +18,20 @@
   font-weight: normal;
   line-height: 40px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__description {
   margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 .example__summary {
@@ -26,6 +41,22 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+  }
+}
+
+.example__image {
+  height: 232px;
+
+  @media (min-width: $tablet-width) {
+    height: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 658px;
+  }
 }
 
 .example__toggle-button {
@@ -40,4 +71,9 @@
   background-color: transparent;
   border: none;
   outline: none;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
