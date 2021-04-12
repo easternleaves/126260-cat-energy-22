@@ -1,0 +1,25 @@
+.cat-info__label,
+.cat-info__field {
+  @include main-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.cat-info__field {
+  box-sizing: border-box;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 13px;
+  padding-bottom: 12px;
+  border: 1px solid $special_grey-5;
+}
+
+

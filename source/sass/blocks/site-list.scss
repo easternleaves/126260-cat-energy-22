@@ -2,11 +2,10 @@
   @include reset-list;
   text-align: center;
   text-transform: uppercase;
-}
 
-@media (min-width: $tablet-width) {
-  .site-list {
-    width: 450px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
   }
 }
 
@@ -14,6 +13,16 @@
   padding: 22px;
   padding-bottom: 24px;
   border-bottom: 1px solid $basic-grey-2;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-top: 42px;
+    margin-right: 35px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .site-list__item-link {
