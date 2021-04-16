@@ -2,6 +2,15 @@
   margin-bottom: 32px;
 }
 
+.selection-form__fieldset-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    flex-direction: row;
+  }
+}
+
 .selection-form__fieldset {
   padding: 0;
   margin: 0;
@@ -13,46 +22,6 @@
   @include reset-list;
 }
 
-.selection-form__item {
-  margin-bottom: 14px;
-}
-
-.selection-form__label,
-.selection-form__field,
-.selection-form__owner-field,
-.selection-form__comment-field {
-  @include main-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special_dark-grey;
-}
-
-.selection-form__field,
-.selection-form__owner-field,
-.selection-form__comment-field {
-  box-sizing: border-box;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 12px;
-  border: 1px solid $special_grey-5;
-}
-
-.selection-form__owner-field {
-  border: 1px solid $special-grey;
-}
-
-.selection-form__label-radio {
-  @include main-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $special_dark-grey-2;
-}
-
 .selection-form__title {
   @include main-font;
   margin-bottom: 35px;
@@ -60,25 +29,39 @@
   font-weight: normal;
   line-height: 26px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
-.selection-form__label-checkbox {
-  @include main-font;
-  font-size: 16px;
-  font-weight: normal;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: $basic-black;
+.selection-form__button-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .selection-form__button {
   padding-top: 10px;
   padding-bottom: 10px;
   border: 0;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }
 
 .selection-form__legend {
   font-size: 14px;
   line-height: 16px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+  }
 }

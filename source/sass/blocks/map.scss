@@ -1,22 +1,34 @@
-.map__contacts {
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  padding-top: 28px;
-  padding-bottom: 28px;
+.map__wrapper {
   background-color: $basic-white;
 
   &--inner {
     background-color: $basic-grey;
   }
 
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}
+
+.map__contacts {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  margin: 0 auto;
+
   @media (min-width: $tablet-width) {
-    padding-left: 70px;
+    width: 708px;
     padding-top: 66px;
     padding-bottom: 50px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
+    padding-left: 76px;
+    padding-top: 66px;
+    padding-bottom: 51px;
     width: 570px;
   }
 }
@@ -29,16 +41,32 @@
   line-height: 18px;
   text-transform: uppercase;
   color: $basic-black-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 22px;
+  }
 }
 
 .map__address {
   margin: 0;
   font-size: 14px;
   line-height: 20px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: left;
+  }
 }
 
 .map__map-widget {
   height: 362px;
+  background: url("../img/map-preview.png") no-repeat;
+  background-size: 100%;
 
   @media (min-width: $tablet-width) {
     height: 400px;

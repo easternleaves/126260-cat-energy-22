@@ -1,0 +1,15 @@
+.fields-group__label,
+.fields-group__label-checkbox,
+.fields-group__owner-field {
+  @include main-font;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: $special_dark-grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
