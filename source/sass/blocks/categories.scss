@@ -1,8 +1,14 @@
 .categories__wrapper {
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
 
   @media (min-width: $desktop-width) {
+    width: 1220px;
     flex-direction: row;
   }
 }
