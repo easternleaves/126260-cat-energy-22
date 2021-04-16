@@ -34,6 +34,7 @@
 .page-footer__social {
   border-top: 1px solid $special_grey-4;
   border-bottom: 1px solid $special_grey-4;
+
   @media (min-width: $tablet-width) {
     border: none;
   }

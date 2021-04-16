@@ -1,8 +1,10 @@
 .map__wrapper {
   background-color: $basic-white;
+
   &--inner {
     background-color: $basic-grey;
   }
+
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
   }
@@ -30,7 +32,6 @@
     width: 570px;
   }
 }
-
 
 .map__offer {
   @include main-font;
@@ -64,7 +65,7 @@
 
 .map__map-widget {
   height: 362px;
-  background: url(../img/map-preview.png) no-repeat;
+  background: url("../img/map-preview.png") no-repeat;
   background-size: 100%;
 
   @media (min-width: $tablet-width) {
