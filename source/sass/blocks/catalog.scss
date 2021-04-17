@@ -11,6 +11,8 @@
 }
 
 .catalog__list {
+  @include reset-list;
+  margin-bottom: 25px;
   display: flex;
   flex-direction: column;
 
@@ -56,9 +58,4 @@
     text-align: left;
     color: $basic-black;
   }
-}
-
-.catalog__list {
-  @include reset-list;
-  margin-bottom: 25px;
 }
