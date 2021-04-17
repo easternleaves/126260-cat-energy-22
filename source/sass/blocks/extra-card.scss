@@ -1,3 +1,11 @@
+.extra-card__wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+  }
+}
+
 .extra-card__title {
   @include main-font;
   margin: 0;
@@ -7,4 +15,9 @@
   line-height: 16px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 20px;
+  }
 }

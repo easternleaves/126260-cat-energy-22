@@ -1,3 +1,11 @@
+.extra-list {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+  }
+}
+
 .extra-list__title,
 .extra-list__description {
   font-size: 14px;

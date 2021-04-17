@@ -1,0 +1,54 @@
+.catalog-buttons {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid $basic-grey;
+  background-color: white;
+}
+
+.catalog-buttons__show-more {
+  @include main-font;
+  margin: 0 auto;
+  padding: 0;
+  padding-top: 53px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: transparent;
+  color: $basic-black-2;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 134px;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 22px;
+  }
+}
+
+.catalog-buttons__legend {
+  margin: 0 auto;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+  }
+}
+
+.catalog-buttons__show-all {
+  @include main-font;
+  margin-top: 21px;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 20px;
+  text-transform: uppercase;
+  border: 0;
+  background-color: $basic-grey;
+  color: $special_dark-grey;
+  cursor: pointer;
+}

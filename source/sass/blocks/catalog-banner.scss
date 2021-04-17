@@ -1,12 +1,25 @@
 .catalog-banner {
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 289px;
+  background: url("../img/gift-photo-mobile.png") no-repeat;
+  background-size: 100%;
   margin-bottom: 35px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    margin-bottom: 76px;
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 289px;
+    margin-left: auto;
+  }
 }
 
 .catalog-banner__text {
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
-  background-color: $special_grey;
 }
