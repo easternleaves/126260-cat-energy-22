@@ -1,3 +1,21 @@
+.card {
+  @media (min-width: $tablet-width) {
+    margin-right: 60px;
+
+    &:nth-child(even) {
+      margin-right: 0;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 80px;
+
+    &:nth-child(1) {
+      margin-right: 0;
+    }
+  }
+}
+
 .card__link {
   text-decoration: none;
 }
@@ -11,4 +29,26 @@
   line-height: 20px;
   text-transform: uppercase;
   color: $special_dark-grey-2;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+.card__button {
+  padding-left: 93px;
+  padding-right: 93px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  @media (min-width: $desktop-width) {
+    padding-left: 93px;
+    padding-right: 93px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
 }

@@ -1,4 +1,16 @@
 .data-list {
   font-size: 12px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 16px;
+  }
 }
+
+.data-list__item {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid $special-grey;
+  }
+}
+
