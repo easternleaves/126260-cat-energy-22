@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  outline: 5px solid rgba(255, 0, 0, 0.8);
+  outline: 5px solid rgba(255, 0, 0, 0.1);
   outline-offset: -3px;
 
   @media (min-width: $tablet-width) {
@@ -14,18 +14,72 @@
 }
 
 .main-nav__logo {
-  outline: 5px solid rgba(255, 0, 0, 0.8);
-  outline-offset: -3px;
-  height: 65px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
+    padding-top: 43px;
     width: 174px;
-    height: 75px;
   }
 
   @media (min-width: $desktop-width) {
     width: 202px;
-    height: 112px;
+  }
+}
+
+.main-nav__toggle {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  display: block;
+  width: 64px;
+  height: 66px;
+  background-color: $basic-grey-2;
+  cursor: pointer;
+  border: none;
+}
+
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: 20px;
+  width: 24px;
+  height: 1.5px;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+.main-nav--closed .main-nav__toggle:active::before {
+  opacity: 0.3;
+}
+
+.main-nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 14px;
+    width: 30px;
+    height: 1.5px;
+    background-color: $basic-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    box-shadow: none;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &:active::before,
+  &:active::after {
+    opacity: 0.3;
   }
 }
 

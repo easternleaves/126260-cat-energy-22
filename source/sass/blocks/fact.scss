@@ -1,9 +1,24 @@
+.fact {
+  margin-bottom: 34px;
+}
+
+.fact__item {
+  width: 124px;
+  height: 56px;
+
+  border: 1px solid $special-grey;
+  border-radius: 3px;
+  margin-right: 32px;
+}
+
 .fact__title {
   @include main-font;
-  margin-bottom: 38px;
+  margin-top: 15px;
+  margin-bottom: 26px;
   font-size: 24px;
   font-weight: normal;
   line-height: 24px;
+  text-align: center;
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
@@ -13,9 +28,14 @@
 }
 
 .fact__description {
+  margin: 0 auto;
+  margin-top: -16px;
+  width: 87px;
   font-size: 12px;
   line-height: 12px;
+  text-align: center;
   color: $special_dark-grey;
+  background-color: $basic-grey-3;
 
   @media (min-width: $tablet-width) {
     font-size: 14px;
