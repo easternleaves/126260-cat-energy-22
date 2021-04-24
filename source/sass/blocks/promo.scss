@@ -1,14 +1,18 @@
 .promo {
-  margin-bottom: 22px;
-  opacity: 0.85;
-  background-color: $basic-green;
+  height: 302px;
+  margin-bottom: 200px;
+  background-color: $basic-green-img;
+  background-image: url("../img/index-background-desktop.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
 
   @media (min-width: $tablet-width) {
+    background: none;
     background-color: $basic-white;
   }
 
   @media (min-width: $desktop-width) {
-    background-color: $basic-green;
+    background: none;
   }
 }
 
@@ -37,6 +41,8 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    width: 414px;
+    padding-left: 87px;
     font-size: 60px;
     line-height: 60px;
     text-align: left;
@@ -54,6 +60,7 @@
   color: $basic-white;
 
   @media (min-width: $tablet-width) {
+    padding-left: 88px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -66,6 +73,7 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
+    width: 709px;
     height: 609px;
   }
 
@@ -76,6 +84,10 @@
 
 .promo__button {
   @include main-font;
+  position: absolute;
+  top: 705px;
+  margin-left: 20px;
+  margin-right: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 14px;
@@ -89,7 +101,20 @@
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
+    position: absolute;
+    top: 360px;
     font-size: 20px;
     line-height: 20px;
+  }
+}
+
+.promo__background-image {
+  @media (min-width: $desktop-width) {
+    z-index: -1;
+    width: 720px;
+    height: 694px;
+    margin-top: -244px;
+    background: url("../img/index-background-desktop.jpg") no-repeat;
+    background-size: cover;
   }
 }

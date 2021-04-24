@@ -18,9 +18,28 @@
     padding: 0;
     padding-top: 42px;
     margin-right: 35px;
+    border-bottom: none;
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &--active {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        height: 2px;
+        background: $basic-green;
+
+        @media (min-width: $desktop-width) {
+          background: $basic-white;
+        }
+      }
     }
   }
 }
@@ -28,4 +47,8 @@
 .site-list__item-link {
   color: $basic-black;
   text-decoration: none;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }
