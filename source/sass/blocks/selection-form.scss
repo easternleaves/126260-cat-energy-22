@@ -12,10 +12,17 @@
 }
 
 .selection-form__fieldset {
+  width: 100%;
   padding: 0;
   margin: 0;
   border: 0;
   margin-bottom: 27px;
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(1) {
+      margin-right: 80px;
+    }
+  }
 }
 
 .selection-form__list {
@@ -24,15 +31,90 @@
 
 .selection-form__title {
   @include main-font;
+  position: relative;
+  width: 187px;
   margin-bottom: 35px;
   font-size: 24px;
   font-weight: normal;
   line-height: 26px;
   color: $basic-black;
 
+  &::before {
+    @media (min-width: $tablet-width) {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      top: 22px;
+      background-color: $basic-green;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 2px;
+    top: 15px;
+    background-color: $basic-green;
+
+    @media (min-width: $tablet-width) {
+      top: 22px;
+    }
+  }
+
   @media (min-width: $tablet-width) {
+    width: auto;
     font-size: 36px;
     line-height: 36px;
+  }
+}
+
+.selection-form__title--first {
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 551px;
+    }
+  }
+
+  &::after {
+    left: 201px;
+
+    @media (min-width: $tablet-width) {
+      left: 554px;
+    }
+  }
+}
+
+.selection-form__title--second {
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 221px;
+    }
+  }
+
+  &::after {
+    left: 143px;
+
+    @media (min-width: $tablet-width) {
+      left: 220px;
+    }
+  }
+}
+
+.selection-form__title--third {
+  &::before {
+    @media (min-width: $tablet-width) {
+      right: 261px;
+    }
+  }
+
+  &::after {
+    left: 164px;
+
+    @media (min-width: $tablet-width) {
+      left: 252px;
+    }
   }
 }
 
@@ -53,10 +135,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    margin-right: 61px;
   }
 }
 
 .selection-form__legend {
+  text-align: center;
+  margin-top: 21px;
   font-size: 14px;
   line-height: 16px;
   color: $basic-black;
