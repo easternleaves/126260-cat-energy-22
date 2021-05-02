@@ -1,3 +1,9 @@
+.cat-info__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 13px;
+}
+
 .cat-info__label,
 .cat-info__field {
   @include main-font;
@@ -13,7 +19,13 @@
   }
 }
 
+.cat-info__label {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
 .cat-info__field {
+  width: 100%;
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;

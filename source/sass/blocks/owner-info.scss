@@ -7,6 +7,21 @@
   }
 }
 
+.owner-info__item {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 14px;
+  width: 100%;
+
+  @media (min-width: $desktop-width) {
+    margin-right: 78px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
 .owner-info__label,
 .owner-info__owner-field {
   @include main-font;
@@ -22,6 +37,11 @@
   }
 }
 
+.owner-info__label {
+  flex-shrink: 0;
+  margin-right: 16px;
+}
+
 .owner-info__owner-field {
   box-sizing: border-box;
   padding-left: 15px;
@@ -29,4 +49,18 @@
   padding-top: 13px;
   padding-bottom: 12px;
   border: 1px solid $special-grey;
+}
+
+.owner-info__owner-field--email {
+  width: 100%;
+  background-image: url("../img/icon-email.svg");
+  background-repeat: no-repeat;
+  background-position: top 13px right 14px;
+}
+
+.owner-info__owner-field--phone {
+  width: 100%;
+  background-image: url("../img/icon-phone.svg");
+  background-repeat: no-repeat;
+  background-position: top 13px right 14px;
 }
