@@ -7,7 +7,9 @@
 
 .catalog-buttons__show-more {
   @include main-font;
+  position: relative;
   margin: 0 auto;
+  margin-bottom: 8px;
   padding: 0;
   padding-top: 53px;
   font-size: 16px;
@@ -19,11 +21,45 @@
   color: $basic-black-2;
   cursor: pointer;
 
+  &::before {
+    content: "";
+    position: absolute;
+    top: 13px;
+    left: 87px;
+    width: 30px;
+    height: 2px;
+    background-color: $special_grey-6;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 12px;
+    right: 86px;
+    width: 30px;
+    height: 2px;
+    background-color: $special_grey-6;
+    transform: rotate(90deg);
+  }
+
   @media (min-width: $tablet-width) {
     width: 134px;
     margin-bottom: 23px;
+    padding-top: 121px;
     font-size: 20px;
     line-height: 22px;
+
+    &::before {
+      top: 52px;
+      width: 60px;
+      left: 36px;
+    }
+
+    &::after {
+      top: 52px;
+      width: 60px;
+      right: 38px;
+    }
   }
 }
 
@@ -43,6 +79,10 @@
 .catalog-buttons__show-all {
   @include main-font;
   margin-top: 21px;
+  padding-top: 9px;
+  padding-bottom: 9px;
+  padding-left: 79px;
+  padding-right: 79px;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -51,4 +91,14 @@
   background-color: $basic-grey;
   color: $special_dark-grey;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 87px;
+    padding-left: 39px;
+    padding-right: 39px;
+  }
 }

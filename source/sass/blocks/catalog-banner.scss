@@ -1,25 +1,50 @@
-.catalog-banner {
-  height: 289px;
-  background: url("../img/gift-photo-mobile.png") no-repeat;
-  background-size: 100%;
-  margin-bottom: 35px;
+.catalog-banner__link {
+  display: block;
+  text-align: center;
+  padding-top: 62px;
 
   @media (min-width: $tablet-width) {
-    margin: 0;
-    margin-bottom: 76px;
-    width: 708px;
-    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding-left: 89px;
+    padding-right: 124px;
+    padding-top: 0;
   }
 
   @media (min-width: $desktop-width) {
-    width: 245px;
-    height: 289px;
-    margin-left: auto;
+    display: block;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.catalog-banner__icon {
+  @media (min-width: $tablet-width) {
+    padding-top: 63px;
   }
 }
 
 .catalog-banner__text {
+  margin: 0;
+  padding-top: 59px;
+  padding-bottom: 42px;
+  width: 161px;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 71px;
+    padding-bottom: 69px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 59px;
+    padding-bottom: 42px;
+    text-align: center;
+  }
 }
+
