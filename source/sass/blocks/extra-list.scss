@@ -1,8 +1,15 @@
 .extra-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
   @media (min-width: $tablet-width) {
-    display: flex;
-    flex-direction: row;
     margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 288px;
+    margin-left: 163px;
   }
 }
 
@@ -10,4 +17,9 @@
 .extra-list__description {
   font-size: 14px;
   line-height: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
