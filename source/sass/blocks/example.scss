@@ -1,5 +1,9 @@
 .example {
   background-color: $basic-grey-3;
+
+  @media (min-width: $tablet-width) {
+    background-color: $basic-white;
+  }
 }
 
 .example__wrapper {
@@ -51,6 +55,11 @@
     font-size: 16px;
     line-height: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    margin-top: 146px;
+  }
 }
 
 .example__summary-block {
@@ -89,25 +98,62 @@
   }
 }
 
-.example__image {
-  height: 232px;
-  text-align: center;
-  margin-top: 42px;
+.example__cat {
+  position: relative;
+}
 
+.example__image {
+  display: block;
+  margin: 0 auto;
+  margin-top: 42px;
+}
+
+
+.example__image--before {
   @media (min-width: $tablet-width) {
+    margin: 0;
+    width: 354px;
     height: 620px;
   }
 
   @media (min-width: $desktop-width) {
-    height: 658px;
+    width: 365px;
+    height: 536px;
   }
 }
+
+
+.example__image--after {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    width: 354px;
+    height: 607px;
+    position: absolute;
+    top: -30px;
+    right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 325px;
+    height: 654px;
+    position: absolute;
+    top: -42px;
+    right: -80px;
+  }
+}
+
 
 .example__toggles {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 23px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+  }
 }
 
 .example__toggle-button {
@@ -135,4 +181,16 @@
   border: 1px solid $special-grey;
   border-radius: 6px;
   background-color: $basic-white;
+}
+
+.example__background {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+    z-index: -1;
+    height: 462px;
+    margin-top: -412px;
+    background-color: $basic-grey-3;
+  }
 }
