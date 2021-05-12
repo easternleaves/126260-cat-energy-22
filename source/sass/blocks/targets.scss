@@ -72,7 +72,9 @@
     border: 1px solid $special-grey;
     border-radius: 50%;
   }
+}
 
+.targets__radio:checked + .targets__label-radio {
   &::after {
     content: "";
     position: absolute;

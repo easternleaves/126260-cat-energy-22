@@ -127,7 +127,7 @@
   position: absolute;
   bottom: -40px;
   display: block;
-  width: 100%;
+  width: calc(100% - 40px);
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 14px;
@@ -165,7 +165,9 @@
     height: 694px;
     margin-top: -112px;
     margin-left: 110px;
-    background: url("../img/index-background-desktop.jpg") no-repeat;
+    background-image: url("../img/index-background-desktop.jpg");
+    background-repeat: no-repeat;
+    background-color: $basic-green;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {

@@ -9,10 +9,12 @@
     <header class="page-header">
       <nav class="main-nav main-nav--opened">
         <div class="main-nav__wrapper">
-          <img class="main-nav__logo main-nav__logo--desktop" src="img/logotype-desktop.svg" width="71" height="59"  alt="Лого «Кэт-Энерджи»">
-          <img class="main-nav__logo main-nav__logo--tablet" src="img/logotype-tablet.svg" width="61" height="51" alt="Лого «Кэт-Энерджи»">
-          <img class="main-nav__logo main-nav__logo--mobile" src="img/logotype-mobile.svg" width="34" height="38" alt="Лого «Кэт-Энерджи»">
-          <a class="main-nav__text-logo">
+          <a class="main-nav__logo-link" href="index.html">
+            <img class="main-nav__logo main-nav__logo--desktop" src="img/logotype-desktop.svg" width="203" height="59" alt="Лого «Кэт-Энерджи»">
+            <img class="main-nav__logo main-nav__logo--tablet" src="img/logotype-tablet.svg" width="175" height="51" alt="Лого «Кэт-Энерджи»">
+            <img class="main-nav__logo main-nav__logo--mobile" src="img/logotype-mobile.svg" width="34" height="38" alt="Лого «Кэт-Энерджи»">
+          </a>
+          <a class="main-nav__text-logo-link" href="index.html">
             <img src="img/logo-2.svg" width="101" height="18" alt="Кэт-Энерджи">
           </a>
           <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -63,15 +65,15 @@
             <fieldset class="selection-form__fieldset">
               <ul class="selection-form__list targets">
                 <li class="targets__item">
-                  <input class="visually-hidden targets__radio" type="radio" id="slim" name="slim" value="slim" checked>
+                  <input class="visually-hidden targets__radio" type="radio" id="slim" name="target" value="slim" checked>
                   <label class="targets__label-radio" for="slim">Похудение</label>
                 </li>
                 <li class="targets__item">
-                  <input class="visually-hidden targets__radio" type="radio" id="mass" name="mass" value="mass">
+                  <input class="visually-hidden targets__radio" type="radio" id="mass" name="target" value="mass">
                   <label class="targets__label-radio" for="mass">Набор массы</label>
                 </li>
                 <li class="targets__item">
-                  <input class="visually-hidden targets__radio" type="radio" id="advice" name="advice" value="advice">
+                  <input class="visually-hidden targets__radio" type="radio" id="advice" name="target" value="advice">
                   <label class="targets__label-radio" for="advice">Не знаю (Нужен ваш совет)</label>
                 </li>
               </ul>
@@ -86,7 +88,7 @@
               </li>
               <li class="owner-info__item">
                 <label class="owner-info__label" for="phone">Телефон:*</label>
-                <input class="owner-info__owner-field owner-info__owner-field--phone" type="number" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
+                <input class="owner-info__owner-field owner-info__owner-field--phone" type="tel" id="phone" name="phone" placeholder="8 (960) 900-60-90" required>
               </li>
             </ul>
           </fieldset>
@@ -165,8 +167,10 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <span class="copyright__text">HTML Academy</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy"></a>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+              <span class="copyright__text">HTML Academy</span>
+              <img src="img/htmlacademy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+            </a>
           </div>
         </div>
       </footer>
