@@ -67,12 +67,10 @@
 
 .card__button {
   display: block;
-  padding-left: 93px;
-  padding-right: 93px;
   padding-top: 9px;
   padding-bottom: 9px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     padding-left: 93px;
     padding-right: 93px;
   }

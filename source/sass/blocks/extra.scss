@@ -58,7 +58,9 @@
     height: 30px;
     border: 1px solid $special-grey;
   }
+}
 
+.extra__checkbox:checked + .extra__label-checkbox {
   &::after {
     content: "";
     position: absolute;
