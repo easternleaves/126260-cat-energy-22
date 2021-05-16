@@ -58,6 +58,7 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    padding-left: 60px;
   }
 }
 
@@ -67,10 +68,21 @@
     position: absolute;
     left: -2px;
     top: -3px;
-    width: 30px;
-    height: 30px;
+    width: 28px;
+    height: 28px;
     border: 1px solid $special-grey;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      width: 38px;
+      height: 38px;
+    }
+  }
+}
+
+.targets__label-radio:hover {
+  &::before {
+    border: 1px solid $special-grey-7;
   }
 }
 
@@ -78,11 +90,23 @@
   &::after {
     content: "";
     position: absolute;
-    left: 7px;
-    top: 6px;
+    left: 6px;
+    top: 5px;
     width: 14px;
     height: 14px;
     background-color: $basic-green;
     border-radius: 50%;
+
+    @media (min-width: $tablet-width) {
+      left: 9px;
+      top: 8px;
+      width: 18px;
+      height: 18px;
+    }
   }
+}
+
+.targets__radio:disabled + .targets__label-radio {
+  opacity: 0.3;
+  pointer-events: none;
 }

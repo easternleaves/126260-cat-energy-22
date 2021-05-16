@@ -1,13 +1,15 @@
 .main-nav {
   display: flex;
   flex-direction: column;
+  margin-bottom: 27px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
+    margin-bottom: 64px;
   }
 
   @media (min-width: $desktop-width) {
-    flex-direction: row;
+    margin-bottom: 74px;
   }
 }
 
@@ -31,6 +33,18 @@
   @media (min-width: $desktop-width) {
     padding-top: 53px;
   }
+}
+
+.main-nav__logo-link[href] {
+  cursor: pointer;
+}
+
+.main-nav__logo-link[href]:hover {
+  opacity: 0.8;
+}
+
+.main-nav__logo-link[href]:active {
+  opacity: 0.6;
 }
 
 .main-nav__logo--mobile {
@@ -83,6 +97,14 @@
   @media (min-width: $desktop-width) {
     display: none;
   }
+}
+
+.main-nav__text-logo-link[href]:hover {
+  opacity: 0.8;
+}
+
+.main-nav__text-logo-link[href]:active {
+  opacity: 0.6;
 }
 
 .main-nav__toggle {

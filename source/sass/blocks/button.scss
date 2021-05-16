@@ -1,12 +1,20 @@
 .button {
   @include main-font;
-  font-size: 16px;
+  display: block;
   font-weight: normal;
-  line-height: 20px;
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
   background-color: $basic-green;
   cursor: pointer;
+
+  &:hover {
+    background-color: $basic-green-2;
+  }
+
+  &:active {
+    background-color: $basic-green-2;
+    color: $special-white;
+  }
 }

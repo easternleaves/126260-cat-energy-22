@@ -13,9 +13,22 @@
   padding-top: 13px;
   padding-bottom: 12px;
   border: 1px solid $special_grey-5;
+  outline: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $special_error;
   }
 }
