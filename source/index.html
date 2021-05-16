@@ -47,7 +47,7 @@
           <div class="promo__column">
             <h1 class="promo__title">Функциональное питание для котов</h1>
             <p class="promo__slogan">Занялся собой? Займись котом!</p>
-            <a class="promo__button" href="form.html">Подобрать программу</a>
+            <a class="promo__button button" href="form.html">Подобрать программу</a>
             <picture>
               <source media="(min-width: 1440px)" srcset="img/index-can-desktop.png 1x, img/index-can-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/index-can-tablet.png 1x, img/index-can-tablet@2x.png 2x">
@@ -118,8 +118,7 @@
                     5 КГ
                   </dt>
                   <dd class="fact__description">
-                    снижение<br>
-                    веса
+                    снижение веса
                   </dd>
                 </div>
                 <div class="fact__item">
@@ -127,12 +126,14 @@
                     60 ДНЕЙ
                   </dt>
                   <dd class="fact__description">
-                    затрачено<br>
-                    времени
+                    затрачено времени
                   </dd>
                 </div>
               </dl>
-              <p class="example__summary">Затраты на питание: 15 000 РУБ.</p>
+              <p class="example__summary">
+                <span>Затраты на питание: </span>
+                <span>15 000 РУБ.</span>
+              </p>
             </div>
           </div>
           <div class="example__cat">
@@ -161,15 +162,16 @@
         <div class="map__wrapper">
           <div class="map__contacts">
             <h2 class="visually-hidden">Где мы находимся</h2>
-            <p class="map__offer">
-              Приглашаем<br> к сотрудничеству дилеров!
-            </p>
-            <p class="map__address">
-              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
-            </p>
+            <div class="map__offer">
+              <p class="map__offer-text">Приглашаем к&nbsp;сотрудничеству дилеров!</p>
+            </div>
+            <div class="map__address">
+              <address class="map__address-text">ул. Большая Конюшенная, д. 19/8 <span class="map__city">Санкт-Петербург</span></address>
+            </div>
           </div>
         </div>
-        <div class="map__map-widget">
+        <div class="map__map-block">
+          <iframe class="map__iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6301856959687!2d30.323272704590043!3d59.93827846920855!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2sBolshaya%20Konyushennaya%20St%2C%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1620863161308!5m2!1sen!2sru" allowfullscreen=""></iframe>
         </div>
       </section>
       <footer class="page-footer">
@@ -198,9 +200,9 @@
             </ul>
           </div>
           <div class="page-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <a class="copyright__link" aria-label="Ссылка на продвинутый интенсив по верстке от htmlacademy" href="https://htmlacademy.ru/intensive/adaptive">
               <span class="copyright__text">HTML Academy</span>
-              <img src="img/htmlacademy-logo.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <svg width="27" height="34" fill="none"><path fill="#666" d="M13.643.016L13.5 0 0 1.407v24.606L13.5 34 27 26.013V1.407L13.643.016zm11.591 25L13.5 31.956 1.766 25.015V14.93l11.685 6.916.02 1.253-8.017-4.743-.011 1.225 8.046 4.809.02 1.286-8.045-4.758-.01 1.226L13.5 26.95l8.124-4.833V16.91l3.62-2.15-.01 10.256zm0-11.564l-3.22 1.88-1.482.875-7.065-4.187-.011 1.225 6.04 3.573-.053.031-.13.076-.86.492-4.986-2.948-.011 1.225 3.936 2.328-.933.61-.021.012-2.971-1.742-.011 1.225 1.947 1.135-1.988 1.186-11.618-6.872 11.638-6.958 11.8 6.834zm0-1.225L13.44 5.31 1.766 12.22V2.99L13.5 1.764 25.234 2.99v9.237z"/></svg>
             </a>
           </div>
         </div>

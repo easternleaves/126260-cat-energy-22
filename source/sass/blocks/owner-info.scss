@@ -10,6 +10,7 @@
 .owner-info__item {
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-bottom: 14px;
   width: 100%;
 
@@ -49,6 +50,19 @@
   padding-top: 13px;
   padding-bottom: 12px;
   border: 1px solid $special-grey;
+  outline: none;
+
+  &:hover {
+    border: 1px solid $special-grey;
+  }
+
+  &:focus {
+    border: 2px solid $special_dark-grey;
+  }
+
+  &:invalid {
+    border: 2px solid $special_error;
+  }
 }
 
 .owner-info__owner-field--email {

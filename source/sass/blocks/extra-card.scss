@@ -4,6 +4,10 @@
     flex-direction: row;
     align-content: space-between;
   }
+
+  @media (min-width: $desktop-width) {
+    align-items: center;
+  }
 }
 
 .extra-card__title {
@@ -21,10 +25,15 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .extra-card__button {
-  display: block;
+  font-size: 16px;
+  line-height: 20px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 90px;

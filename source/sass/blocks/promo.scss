@@ -4,7 +4,7 @@
   background-color: $basic-green-img;
   background-image: url("../img/index-background-mobile.jpg");
   background-repeat: no-repeat;
-  background-position: 50% 50%;
+  background-position: center;
   background-size: cover;
 
   @media (min-resolution: 2dppx) {
@@ -123,22 +123,13 @@
 }
 
 .promo__button {
-  @include main-font;
   position: absolute;
   bottom: -40px;
-  display: block;
   width: calc(100% - 40px);
   padding-top: 11px;
   padding-bottom: 11px;
   font-size: 14px;
-  font-weight: normal;
   line-height: 18px;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: $basic-white;
-  background-color: $basic-green;
-  cursor: pointer;
 
   @media (min-width: $tablet-width) {
     width: auto;

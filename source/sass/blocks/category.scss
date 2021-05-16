@@ -1,10 +1,14 @@
 .category {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   margin-left: 20px;
   margin-right: 20px;
   padding: 20px;
   background-color: $basic-grey;
+
+  &:last-child {
+    margin-bottom: 27px;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
@@ -90,6 +94,7 @@
 .category__description {
   margin: 0;
   padding-bottom: 23px;
+  margin-bottom: 19px;
   border-bottom: 1px solid $special_grey-4;
 
   @media (min-width: $tablet-width) {
@@ -127,14 +132,17 @@
 .category__link {
   @include main-font;
   position: relative;
-  display: block;
-  padding-top: 19px;
+  padding-right: 47px;
   font-size: 16px;
   font-weight: normal;
   line-height: 16px;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-black;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -146,16 +154,23 @@
 .category__link::after {
   content: "";
   position: absolute;
-  top: 21px;
-  left: 102px;
+  display: block;
+  top: 6px;
+  right: 8px;
   width: 24px;
   height: 12px;
   background-image: url("../img/icon-arrow.svg");
+  background-position: right center;
   background-repeat: no-repeat;
-  background-position: 0 0;
+  transition: all 0.3s ease;
 
   @media (min-width: $tablet-width) {
     top: 10px;
     left: 133px;
   }
+}
+
+.category__link:hover::after {
+  right: 0;
+  width: 32px;
 }

@@ -11,6 +11,14 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  &:hover path {
+    fill: $basic-green;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .copyright__text {

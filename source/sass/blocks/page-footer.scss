@@ -13,6 +13,7 @@
     width: 708px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   @media (min-width: $desktop-width) {
