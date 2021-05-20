@@ -12,13 +12,17 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover path {
+  &:hover .copyright__icon {
     fill: $basic-green;
   }
 
   &:active {
     opacity: 0.3;
   }
+}
+
+.copyright__icon {
+  fill: $special_grey-3;
 }
 
 .copyright__text {

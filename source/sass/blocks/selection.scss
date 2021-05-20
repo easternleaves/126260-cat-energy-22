@@ -23,6 +23,8 @@
   color: $basic-black;
 
   @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 54px;
     font-size: 60px;
     line-height: 60px;
   }
@@ -41,6 +43,7 @@
 
   @media (min-width: $tablet-width) {
     width: 323px;
+    margin-bottom: 66px;
     font-size: 20px;
     line-height: 30px;
   }
