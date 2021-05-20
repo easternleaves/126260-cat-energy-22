@@ -1,5 +1,9 @@
 .fact {
   margin-bottom: 34px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 0;
+  }
 }
 
 .fact__item {

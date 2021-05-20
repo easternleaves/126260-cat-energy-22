@@ -1,7 +1,7 @@
 .main-nav {
   display: flex;
   flex-direction: column;
-  margin-bottom: 27px;
+
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -25,7 +25,7 @@
   @media (min-width: $tablet-width) {
     padding-left: 0;
     padding-right: 0;
-    padding-top: 26px;
+    padding-top: 25px;
     padding-bottom: 0;
     border-bottom: none;
   }
@@ -140,9 +140,9 @@
   &::after {
     content: "";
     position: absolute;
-    top: 32px;
-    left: 15px;
-    width: 30px;
+    top: 31px;
+    left: 23px;
+    width: 24px;
     height: 1.5px;
     background-color: $basic-black;
   }

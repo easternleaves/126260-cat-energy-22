@@ -21,3 +21,26 @@
     width: 1220px;
   }
 }
+
+.page-header--index {
+  &::before {
+    @media (min-width: $desktop-width) {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      right: 0;
+      width: 50%;
+      height: 694px;
+      background-image: url("../img/index-background-desktop.jpg");
+      background-repeat: no-repeat;
+      background-color: $basic-green-img;
+      background-size: auto 694px;
+      background-position-x: right;
+
+      @media (min-resolution: 2dppx) {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+}

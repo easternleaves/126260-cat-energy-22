@@ -12,7 +12,7 @@
   justify-content: space-between;
   align-items: center;
 
-  &:hover path {
+  &:hover .copyright__icon {
     fill: $basic-green;
   }
 
@@ -21,9 +21,14 @@
   }
 }
 
+.copyright__icon {
+  fill: $special_grey-3;
+}
+
 .copyright__text {
   font-size: 16px;
   line-height: 18px;
   color: $special-dark-grey;
   font-weight: normal;
 }
+

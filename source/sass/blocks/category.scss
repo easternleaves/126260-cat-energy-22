@@ -7,21 +7,18 @@
   background-color: $basic-grey;
 
   &:last-child {
-    margin-bottom: 27px;
+    margin-bottom: 0;
   }
 
   @media (min-width: $tablet-width) {
     margin-left: 0;
     margin-right: 0;
+    margin-bottom: 30px;
     padding: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-right: 80px;
-
-    &:last-child {
-      margin-right: 0;
-    }
+    margin-bottom: 0;
   }
 }
 
@@ -105,6 +102,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 0;
     padding-bottom: 23px;
   }
 }
@@ -115,6 +113,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 467px;
     padding-right: 0;
   }
 }
@@ -125,6 +124,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    width: 457px;
     padding-right: 0;
   }
 }
