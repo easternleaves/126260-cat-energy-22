@@ -13,6 +13,12 @@
   }
 }
 
+.main-nav--index {
+  @media (min-width: $desktop-width) {
+    margin-bottom: 111px;
+  }
+}
+
 .main-nav__wrapper {
   display: flex;
   flex-direction: row;

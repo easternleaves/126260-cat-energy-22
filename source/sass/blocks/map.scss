@@ -52,7 +52,13 @@
   padding-right: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 50%;
+    width: auto;
+    padding-left: 41px;
+    padding-right: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
   }
 }
 
@@ -80,12 +86,14 @@
   @media (min-width: $tablet-width) {
     font-size: 16px;
     text-align: right;
-    width: 159px;
+    width: 190px;
+    padding-right: 42px;
   }
 
   @media (min-width: $desktop-width) {
     text-align: left;
     width: 155px;
+    padding-right: 0;
   }
 }
 

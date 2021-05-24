@@ -13,13 +13,15 @@
 
   @media (min-width: $tablet-width) {
     background: none;
+    min-height: 810px;
     background-color: $basic-white;
-    margin-bottom: 540px;
+    margin-bottom: 10px;
   }
 
   @media (min-width: $desktop-width) {
     background: none;
-    margin-bottom: 370px;
+    min-height: 471px;
+    margin-bottom: 82px;
   }
 }
 
@@ -71,14 +73,13 @@
     color: $basic-black;
   }
 
-  @media (min-width: $desktop-width) {
-    margin-top: 111px;
+  @media (min-width: $tablet-width) {
+    padding-left: 80px;
   }
 }
 
 .promo__slogan {
   @include main-font;
-
   margin-top: 25px;
   font-size: 14px;
   font-weight: normal;
@@ -99,6 +100,7 @@
   }
 
   @media (min-width: $desktop-width) {
+    padding-left: 80px;
     margin-bottom: 52px;
   }
 }
@@ -109,13 +111,14 @@
   margin-top: 29px;
 
   @media (min-width: $tablet-width) {
+    margin-top: -29px;
     width: 709px;
     height: 609px;
   }
 
   @media (min-width: $desktop-width) {
     position: absolute;
-    top: 40px;
+    top: -53px;
     left: 448px;
     width: 552px;
     height: 499px;
@@ -145,6 +148,6 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 343px;
+    margin-left: 80px;
   }
 }

@@ -4,30 +4,37 @@
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     flex-direction: row;
-    align-content: space-between;
+    flex-wrap: wrap;
+    justify-content: unset;
   }
 }
 
 .extra__item {
   margin-bottom: 25px;
 
+  &:last-child {
+    margin-bottom: 0;
+  }
+
   @media (min-width: $tablet-width) {
+    width: 284px;
+    margin-bottom: 42px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: 221px;
-    margin-right: 123px;
+    margin-right: 104px;
+    margin-bottom: 0;
 
     &:last-child {
       margin-right: 0;
     }
-  }
-
-  @media (min-width: $tablet-width) {
-    margin-right: 104px;
   }
 }
 
