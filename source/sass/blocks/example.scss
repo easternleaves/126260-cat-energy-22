@@ -7,10 +7,12 @@
 }
 
 .example__wrapper {
-  padding: 27px;
+  padding-top: 27px;
   padding-left: 20px;
   padding-right: 20px;
+  padding-bottom: 40px;
   margin: 0 auto;
+
 
   @media (min-width: $tablet-width) {
     padding-top: 0;
@@ -20,13 +22,22 @@
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    min-height: 656px;
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
 }
 
 .example__left-column {
-  margin-bottom: 44px;
+  margin-bottom: 42px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 59px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
 }
 
 .example__title {
@@ -45,8 +56,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 39px;
-    margin-bottom: 146px;
+    padding-top: 62px;
+    margin-bottom: 75px;
   }
 }
 
@@ -73,6 +84,7 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    padding-top: 70px;
     margin-bottom: 69px;
   }
 }
@@ -104,11 +116,13 @@
   @media (min-width: $tablet-width) {
     font-size: 20px;
     width: 174px;
+    padding-top: 11px;
     text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 55px;
+    margin-top: 53px;
+    padding-top: 0;
     width: auto;
     text-align: left;
   }
@@ -117,6 +131,18 @@
 .example__summary-title {
   @media (min-width: $desktop-width) {
     margin-right: 63px;
+  }
+}
+
+.example__summary-price {
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: inline;
+    margin-top: 0;
   }
 }
 
@@ -129,20 +155,19 @@
   margin: 0 auto;
 }
 
-
 .example__image--before {
   @media (min-width: $tablet-width) {
     margin: 0;
     width: 354px;
-    height: 620px;
+    height: 536px;
   }
 
   @media (min-width: $desktop-width) {
     width: 365px;
     height: 536px;
+    margin-right: 285px;
   }
 }
-
 
 .example__image--after {
   display: none;
@@ -150,21 +175,20 @@
   @media (min-width: $tablet-width) {
     display: block;
     width: 354px;
-    height: 607px;
+    height: 536px;
     position: absolute;
-    top: 8px;
+    top: 0;
     right: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 325px;
-    height: 654px;
+    height: 536px;
     position: absolute;
-    top: -42px;
-    right: -80px;
+    top: 0;
+    right: -40px;
   }
 }
-
 
 .example__toggles {
   display: flex;
@@ -174,13 +198,19 @@
   margin-top: 23px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 0;
-    margin-bottom: 67px;
+    margin-top: 16px;
+    margin-bottom: 68px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    justify-content: flex-end;
   }
 }
 
 .example__toggle-button {
   @include main-font;
+  padding: 0;
   font-size: 16px;
   font-weight: normal;
   line-height: 20px;
@@ -192,16 +222,18 @@
   border: none;
   outline: none;
   cursor: pointer;
+  border-bottom: 1px solid transparent;
 
   &:hover {
     border-bottom: 1px solid $basic-black-4;
   }
 
   &:active {
-    border-bottom: none;
+    border-bottom: 1px solid transparent;
   }
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 1px;
     font-size: 20px;
     line-height: 30px;
     border-bottom: 1px dotted $basic-black-3;

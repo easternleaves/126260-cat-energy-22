@@ -1,3 +1,8 @@
+.comment {
+  display: flex;
+  flex-direction: row;
+}
+
 .comment__comment-field {
   @include main-font;
   width: 100%;
@@ -10,14 +15,20 @@
   box-sizing: border-box;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 13px;
-  padding-bottom: 12px;
+  padding-top: 9px;
+  padding-bottom: 13px;
   border: 1px solid $special_grey-5;
   outline: none;
+  resize: none;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
+    height: 174px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
 
   &:hover {
@@ -26,9 +37,27 @@
 
   &:focus {
     border: 2px solid $special_dark-grey;
+    padding-left: 14px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 19px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
   }
 
-  &:invalid {
+  &:focus:invalid {
     border: 2px solid $special_error;
+    padding-left: 14px;
+    padding-top: 8px;
+    padding-bottom: 12px;
+
+    @media (min-width: $tablet-width) {
+      padding-left: 19px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+    }
   }
 }

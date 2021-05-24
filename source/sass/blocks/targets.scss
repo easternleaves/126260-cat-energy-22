@@ -1,6 +1,5 @@
 .targets {
   position: relative;
-  margin-bottom: 24px;
 
   &::before {
     content: "";
@@ -23,7 +22,8 @@
   }
 
   @media (min-width: $tablet-width) {
-    padding: 25px;
+    padding: 27px;
+    padding-left: 28px;
     border: 1px solid $special_grey-5;
 
     &::before {
