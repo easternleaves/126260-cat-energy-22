@@ -105,19 +105,19 @@
   }
 }
 
-.owner-info__owner-field:focus ~ .owner__field-icon {
+.owner-info__owner-field:focus ~ .owner-info__field-icon {
   fill: $basic-green;
 }
 
-.owner-info__owner-field:focus:invalid ~ .owner__field-icon {
+.owner-info__owner-field:focus:invalid ~ .owner-info__field-icon {
   fill: $special_error;
 }
 
-.owner__field-icon {
+.owner-info__field-icon {
   position: absolute;
 }
 
-.owner__field-icon--email {
+.owner-info__field-icon--email {
   top: 16px;
   right: 15px;
 
@@ -127,7 +127,7 @@
   }
 }
 
-.owner__field-icon--phone {
+.owner-info__field-icon--phone {
   top: 13px;
   right: 13px;
 
